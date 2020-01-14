@@ -20,8 +20,8 @@ public class UserDao {
 	}
 	
 	public static OperationResponse setUserProfile(UserProfile req) {
-		users.put(req.getUserId(), req);
-		
+
+
 		OperationResponse op = new OperationResponse();
 		op.setOpCode("SUCCESS");
 		

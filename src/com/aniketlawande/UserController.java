@@ -83,16 +83,7 @@ public class UserController {
 		return user;
 	}
 	
-	/**
-	 * Sets the user profile for the userId specified
-	 * @param req
-	 * @return
-	 */
-	@RequestMapping(value="/profile", method=RequestMethod.POST)
-	public OperationResponse setProfileUser(@RequestBody UserProfile req) {
-		//Need to do some basic authorization
-		return UserDao.setUserProfile(req);
-	}
+
 	
 	/**
 	 * Logs out the current user
